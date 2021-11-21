@@ -18,4 +18,7 @@
         .social-link:focus .social-icon {
             fill: var(--title-color);
         }
-    
+
+        .social-link-dark {
+            background-color: var(--social-link-dark-color);
+        }

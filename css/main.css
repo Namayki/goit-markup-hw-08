@@ -402,6 +402,10 @@ a {
   fill: var(--title-color);
 }
 
+.social-link-dark {
+  background-color: var(--social-link-dark-color);
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -648,9 +652,9 @@ a {
 .modal-form-checkbox-label::before {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
-  background-image: url(../images/icon-check.svg);
-  background-size: contain;
-  background-origin: border-box;
+  background-image: url(../images/sprite-min.svg/icon-check.svg);
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -770,6 +774,18 @@ a {
   }
 }
 
+.burger-btn {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+}
+
+.burger-btn-icon {
+  width: 40px;
+  height: 40px;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -851,7 +867,7 @@ a {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--background-origin-color);
-  background-image: linear-gradient(var(--linear-gradient-color), var(--linear-gradient-color)), url(../images/img-hero.jpg);
+  background-image: linear-gradient(var(--linear-gradient-color), var(--linear-gradient-color)), url(../images/hero/img-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

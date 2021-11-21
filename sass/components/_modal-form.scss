@@ -110,9 +110,9 @@
         .modal-form-checkbox-label::before {
             border-color: var(--accent-color);
             background-color: var(--accent-color);
-            background-image: url(../images/icon-check.svg);
-            background-size: contain;
-            background-origin: border-box;
+            background-image: url(../images/sprite-min.svg/icon-check.svg);
+            background-size: cover;
+            background-position: center;
             background-repeat: no-repeat;
         }
         .modal-form-checkbox:focus + 
