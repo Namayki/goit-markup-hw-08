@@ -1,0 +1,76 @@
+body {
+    font-style: normal;
+    font-family: var(--primary-font);
+    color:var(--header-color);
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: inherit;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+    p, 
+    h1, 
+    h2, 
+    h3, 
+    h4, 
+    h5, 
+    h6 {
+        margin: 0;
+    } 
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    button {
+        cursor: pointer;
+        padding: 0;
+        border: none;
+        font: inherit;
+        color: inherit;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    address {
+        font-style: normal;
+        /* or */
+        font-style: inherit;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+     }
+
+    ul,
+    ol {
+        list-style-type: none;
+        padding-left: o;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .list {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+    
+    .link {
+        text-decoration: none;
+        color: inherit;
+    }

@@ -1,0 +1,9 @@
+.feature-item {
+    width: 270px;
+}
+
+.feature-item:not(:last-child),
+.typography-item:not(:last-child),
+.team-item:not(:last-child){
+margin-right: 30px;
+}

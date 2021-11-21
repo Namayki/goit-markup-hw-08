@@ -1,0 +1,19 @@
+.modal-btn {
+    cursor: pointer;
+    width:200px;
+    height: 50px;
+    font-weight: bold;
+    letter-spacing: 0.06em;     
+    margin: 0 auto;
+    color:var(--title-color);
+    background-color:var(--accent-color);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px var(--modal-button-shadow-color);
+    transition: background-color var(--transition),
+    color var(--transition);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: var(--secondary-accent-color);
+}

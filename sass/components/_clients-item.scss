@@ -1,0 +1,10 @@
+
+        .clients-item {
+            width: 170px;
+            height: 92px;
+        }
+    
+        .clients-item:not(:last-child) {
+            margin-right: 30px;
+        }
+    

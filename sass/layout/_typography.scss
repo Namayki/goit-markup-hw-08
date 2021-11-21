@@ -1,0 +1,23 @@
+        .typography {
+            padding-bottom: 94px;
+        }
+    
+        .typography-list {
+            display: flex;
+            justify-content: space-between;
+        }
+     
+       .typography-thumb-about {
+            width: 100%;
+            text-align: center;
+            max-width: 100%;
+            height: 70px;
+            padding-top: 27px;
+            padding-bottom: 27px;
+            position: absolute;
+            background-color: var(--typography-thumb-color);
+            bottom: 0;
+        }
+       
+    
+    

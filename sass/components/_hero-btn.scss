@@ -1,0 +1,26 @@
+
+        .hero-btn,
+        .projects-text {
+            font-size: 16px;
+            line-height: 1.87;
+        }
+        
+        .hero-btn {
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: bold;
+            display: block;
+            padding: 10px 32px;
+            letter-spacing: 0.06em;
+            color: var(--title-color);
+            background-color: var(--accent-color);
+            border-radius: 4px;
+            margin: 0 auto;
+            transition: background-color var(--transition),
+            color var(--transition);
+        }
+    
+        .hero-btn:hover, 
+        .hero-btn:focus {
+            background-color: var(--secondary-accent-color);
+        }

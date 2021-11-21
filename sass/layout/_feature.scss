@@ -1,0 +1,28 @@
+
+        .feature {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+    
+        .feature-list {
+            display: flex;
+        }
+    
+        .icon-feature {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 120px;
+            background-color: var(--background-team-color);
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+     
+        .feature-text {
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: var(--second-header-color);
+        }
+      

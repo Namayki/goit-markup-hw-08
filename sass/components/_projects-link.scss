@@ -1,0 +1,23 @@
+
+        .projects-link:hover .projects-description,
+        .projects-link:focus .projects-description {
+            transform: translateY(0);
+        }
+    
+        .projects-link {
+            display: block;
+            cursor: pointer;
+            position: relative;
+            transition: background-color var(--transition);  
+        }
+
+        .projects-link:hover,
+        .projects-link:focus {
+            box-shadow: 0px 4px 4px var(--projects-shadow-color);
+            transform: translate(0);
+        }
+    
+        .social-link-dark {
+            background-color: var(--social-link-dark-color);
+        }
+    
