@@ -50,20 +50,70 @@
                 </nav>
                 
                 <!-- start mobile menu -->
-
-                <button class="burger-btn">
-                    <svg type="button" class="burger-btn-icon">
+               
+                <button class="burger-btn" data-menu-open>
+                    <svg type="button" class="burger-btn-icon" >
                         <use href="./images/sprite.svg/icons.svg#icon-burger"></use>
                     </svg>
                 </button>
+                <!-- mobile modal nav -->
+                
+                <div class="mobile-menu" data-menu>
+                    <div class="container mobile-modal-container">
+                    <nav class="modal-nav current">
+                        <ul class="modal-nav-menu list">
+                            <li class="modal-menu-item">
+                                <a class="modal-nav-link link current" href="./index.html">
+                                    Студия
+                                </a>
+                            </li>
+                            <li class="modal-menu-item">
+                                <a class="modal-nav-link link" href="./portfolio.html">
+                                    Портфолио
+                                </a>
+                            </li>
+                            <li class="modal-menu-item">
+                                <a class="modal-nav-link link" href="Контакты">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
 
-                <!-- <div class="mobile-menu">
-                    <button class="mobile-close-btn">
+                    <!-- mobile modal contacts -->
+                        <ul class="modal-contacts list">
+                        <li class="modal-contacts-item">
+                            <a class="modal-contacts-link modal-contacts-tel link" href="tel:+380961111111">
+                                +38 096 111 1111
+                            </a>
+                        </li>
+                        <li class="modal-contacts-item">
+                            <a class="modal-contacts-link modal-contacts-mail link" href="e-mail.info@devstudio.com">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        </ul>
+
+                     <!-- modal-close-btn -->
+                    <button class="modal-close-btn" data-menu-close>
                         <svg class="close-btn-icon">
                             <use href="./images/sprite.svg/icons.svg#icon-close"></use>
                         </svg>
                     </button>
-                </div> -->
+
+                    <div class="modal-social-nav">
+                        <ul class="modal-social-item">
+                            <li class="modal-social-link">Instagram</li>
+                            <li class="modal-social-link">Twitter</li>
+                            <li class="modal-social-link">Facebook</li>
+                            <li class="modal-social-link">Linkedin</li>
+                        </ul>
+                    </div>
+
+                </div>
+                </div>
+
+          
 
                 <!-- end mobile menu -->
 
@@ -91,7 +141,7 @@
         <!-- main content -->
         <main>
             <!-- hero -->
-            <!-- <section class="hero">
+            <section class="hero">
                 hero container
                 <div class="container hero-container">
                     <h1 class="hero-title">
@@ -101,7 +151,7 @@
                         Заказать услугу
                     </button>
                 </div>
-            </section> -->
+            </section>
 
             <!-- feature -->
             <!-- <section class="feature">
@@ -579,6 +629,8 @@
 
     </body>
 
-    <!-- <script src="./js/menu.js"></script> -->
-    <!-- <script src="./js/modal.js"></script> -->
+    <!-<script src="./js/menu.js"></script> -->
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script> 
 </html>
