@@ -1,4 +1,4 @@
-       .btn-portfolio {
+       .portfolio-btn {
             padding-top: 6px;
             padding-right: 22px;
             padding-bottom: 6px;
@@ -17,8 +17,8 @@
             box-shadow var(--transition);
         }
     
-        .btn-portfolio:hover, 
-        .btn-portfolio:focus {
+        .portfolio-btn:hover, 
+        .portfolio-btn:focus {
             color: var(--title-color);
             background-color: var(--accent-color);
             box-shadow: var(--btn-portfolio-shadow-color);

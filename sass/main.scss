@@ -9,30 +9,31 @@
 @import './components/container';
 @import './components/section';
 @import './components/logo';
+@import './components/title';
 @import './components/hero-btn';
-@import './components/btn-portfolio';
-@import './components/footer-btn';
-@import './components/modal-btn-close';
-@import './components/modal-btn';
+@import './components/feature-item';
 @import './components/team-item';
 @import './components/social-item';
-@import './components/clients-item';
-@import './components/projects-item';
-@import './components/feature-item';
-@import './components/projects-link';
-@import './components/clients-link';
 @import './components/social-link';
-@import './components/title';
-@import './components/projects-description';
 @import './components/social';
 @import './components/icon';
+@import './components/clients-item';
+@import './components/clients-link';
+@import './components/portfolio-btn';
+@import './components/projects-item';
+@import './components/projects-link';
+@import './components/projects-description';
 @import './components/footer-address';
-@import './components/modal-form';
+@import './components/footer-btn';
 @import './components/footer-form';
 @import './components/backdrop';
 @import './components/modal';
+@import './components/modal-form';
+@import './components/modal-btn-close';
+@import './components/modal-btn';
 @import './components/modal-accept-policy';
 @import './components/checkbox';
+
 
 //LAYOUT
 @import './layout/header';

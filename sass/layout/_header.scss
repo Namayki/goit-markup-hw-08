@@ -1,13 +1,16 @@
 .header {
-    border-bottom: 1px solid #E5E5E5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--header-border-color);
     padding-top: 16px;
     padding-bottom: 16px;
     
-
     @media screen and (min-width: 768px) {
         padding-top: 26px;
         padding-bottom: 26px;
-      }
+    }
 
     @media screen and (min-width: 1200px) {
         padding-top: 24px;
@@ -15,11 +18,27 @@
     }
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .burger-btn {
     background-color: transparent;
     cursor: pointer;
     padding: 0;
     border: none;
+    line-height: 0;
+
+    @media screen and (min-width: 767px){
+        display: none;
+    }
+}
+
+.burger-btn:hover,
+.burger-btn:focus {
+    fill: var(--accent-color);
 }
 
 .burger-btn-icon {
@@ -27,9 +46,32 @@
     height: 40px;
 }
 
-.header-container {
-    display: flex;
-    align-items: center;
-    
-    // display: none;
-}
+// .mobile-menu {
+//     position: fixed;
+//     z-index: 100;
+//     top: 0;
+//     left: 0;
+//     width: 100vm;
+//     height: 100vh;
+//     padding: 10px 15px;
+//     background-color: wheat;
+// }
+
+// .mobile-close-btn {
+//     background-color: transparent;
+//     cursor: pointer;
+//     padding: 0;
+//     border: none;
+//     line-height: 0;
+// }
+
+// .close-btn-icon {
+//     position: absolute;
+//     top: 10px;
+//     right: 15px;
+//     width: 40px;
+//     height: 40px;
+// }
+
+
+
