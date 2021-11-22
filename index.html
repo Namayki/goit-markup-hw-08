@@ -28,7 +28,7 @@
             <div class="container header-container">
                 <!-- menu nav -->
                 <nav class="header-nav current">
-                    <a href="./index.html" class="header-logo link logo">Web<span class="header-logo-dark">Studio</span> </a>
+                    <a href="./index.html" class="header-logo link logo">Web<span class="header-logo-dark">Studio</span></a>
 
                     <ul class="nav-menu list">
                         <li class="menu-item">
@@ -51,8 +51,11 @@
                 
                 <!-- start mobile menu -->
                
-                <button class="burger-btn" data-menu-open>
-                    <svg type="button" class="burger-btn-icon" >
+                <button 
+                type="button" 
+                class="burger-btn is-open" 
+                aria-expanded="false" data-menu-open>
+                    <svg class="burger-btn-icon" >
                         <use href="./images/sprite.svg/icons.svg#icon-burger"></use>
                     </svg>
                 </button>
@@ -142,7 +145,7 @@
         <main>
             <!-- hero -->
             <section class="hero">
-                hero container
+                <!-- hero container -->
                 <div class="container hero-container">
                     <h1 class="hero-title">
                         ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА
@@ -555,7 +558,7 @@
                     </form>
                 </div>
             </div>
-        </footer> --> -->
+        </footer> --> 
 
         <!--  modal section  -->
 
@@ -632,5 +635,5 @@
     <!-<script src="./js/menu.js"></script> -->
 
     <script src="./js/menu.js"></script>
-    <script src="./js/modal.js"></script> 
+    <!-- <script src="./js/modal.js"></script>  -->
 </html>

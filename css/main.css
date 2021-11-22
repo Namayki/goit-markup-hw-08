@@ -131,6 +131,7 @@ a {
 }
 
 .container {
+  width: 100%;
   padding: 0px 15px;
   margin: 0 auto;
   width: 100%;
@@ -398,21 +399,10 @@ a {
   color: var(--accent-color);
 }
 
-.portfolio-btn {
-  padding-top: 6px;
-  padding-right: 22px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--header-color);
-  background-color: var(--background-team-color);
-  border-radius: 4px;
-  transition: background-color var(--transition), color var(--transition), box-shadow var(--transition);
+@media screen and (min-width: 480px) {
+  .portfolio-btn {
+    display: flex;
+  }
 }
 
 .portfolio-btn:hover,
@@ -767,7 +757,6 @@ a {
 }
 
 .header {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -855,8 +844,8 @@ a {
 }
 
 .close-btn-icon {
-  width: 18px;
-  height: 18px;
+  width: 40px;
+  height: 40px;
 }
 
 .mobile-modal-container {
@@ -929,10 +918,6 @@ a {
   cursor: pointer;
 }
 
-.modal-social-link:focus {
-  repeat: no;
-}
-
 .modal-nav-link:hover .modal-contacts-link
 .modal-social-link,
 .modal-nav-link:focus .modal-contacts-link
@@ -966,6 +951,7 @@ a {
   letter-spacing: 0.02em;
   color: var(--header-color);
   transition: color var(--transition);
+  position: relative;
 }
 
 .menu-link.current::after {
@@ -1058,39 +1044,35 @@ a {
   color: var(--accent-color);
 }
 
-.hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: var(--background-origin-color);
-  background-image: linear-gradient(var(--linear-gradient-color), var(--linear-gradient-color)), url(../images/hero/img-hero.jpg);
+.hero-container {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../../images/hero/hero-mobile.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  max-width: 1600px;
-  margin: 0 auto;
+  content: '';
+  max-width: 480px;
+  height: 400px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    background-image: url(../../images/hero/hero-tablet.jpg);
+    min-width: 768px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .hero {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) and (min-width: 768px) {
-  .hero {
+  .hero-container {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--background-origin-color);
-    background-image: linear-gradient(var(--linear-gradient-color), var(--linear-gradient-color)), url(../images/hero/);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    max-width: 1600px;
-    margin: 0 auto;
   }
 }
 
-.hero-container {
+.hero-container .hero-container {
   display: column;
 }
 

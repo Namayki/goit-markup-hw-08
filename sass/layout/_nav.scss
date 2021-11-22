@@ -22,7 +22,7 @@
     letter-spacing: 0.02em;
     color: var(--header-color);
     transition: color var(--transition);
-    // position: relative;
+    position: relative;
 }
 
 .menu-link.current::after {

@@ -1,4 +1,53 @@
-.hero {
+
+.hero-container {
+    // min-height: 100vh;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../../images/hero/hero-mobile.jpg);
+    // background-color: var(--background-origin-color);
+    // background-image: linear-gradient(var(--linear-gradient-color),
+    // var(--linear-gradient-color));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    max-width: 480px;
+    height: 400px;
+    @media screen and (min-width: 768px) {
+        background-image: url(../../images/hero/hero-tablet.jpg);
+        min-width: 768px;
+    } 
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    .hero-container {
+        display: column;
+    }
+}
+
+
+
+    
+// @media screen and (min-width: 480px) {
+//     // padding-top: 60px;
+//     // padding-bottom: 60px;
+//     width: 480px;
+//     height: 100%;
+// }
+// @media screen and (min-width: 1200px) {
+// display: none;
+// }
+
+// .hero-container {
+// display: column;
+// width: 100%;
+// }
+
+// .hero {
     // padding-top: 200px;
     // padding-bottom: 200px;
     // background-color: var(--background-origin-color);
@@ -13,30 +62,8 @@
 
 
 
-        background-color: var(--background-origin-color);
-        background-image: linear-gradient(var(--linear-gradient-color),
-        var(--linear-gradient-color));
-        // url(../images/hero/hero-m.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        content: '';
-        max-width: 480px;
-        margin: 0 auto;
+    
  
       
-    
-        @media screen and (min-width: 480px) {
-            // padding-top: 60px;
-            // padding-bottom: 60px;
-            width: 480px;
-            height: 100%;
-    }
-    @media screen and (min-width: 1200px) {
-        display: none;
-    }
-
-.hero-container {
-    display: column;
-    width: 100%;
-}
+    // @media screen and (min-width: 1200px) {
+    //     display: none;
