@@ -1,32 +1,35 @@
-       .portfolio-btn {
-            // padding-top: 6px;
-            // padding-right: 22px;
-            // padding-bottom: 6px;
-            // padding-left: 22px;
-            // font-weight: 500;
-            // font-size: 16px;
-            // line-height: 1.63;
-            // align-items: center;
-            // text-align: center;
-            // letter-spacing: 0.03em;
-            // color: var(--header-color);
-            // background-color: var(--background-team-color);
-            // border-radius: 4px;
-            // transition: background-color var(--transition),
-            // color var(--transition),
-            // box-shadow var(--transition);
-            // display: none;
-            @media screen and (min-width: 480px) {
-                display: flex;
-            }
-        }
-    
-        .portfolio-btn:hover, 
-        .portfolio-btn:focus {
-            color: var(--title-color);
-            background-color: var(--accent-color);
-            box-shadow: var(--btn-portfolio-shadow-color);
-        }
-        .portfolio-btn-link {
+.portfolio-btn-list {
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: center;
+}  
 
-        }
+.portfolio-btn-link:not(:last-child) {
+    margin-right: 8px;
+}
+
+.portfolio-btn {
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--header-color);
+    background-color: var(--background-team-color);
+    border-radius: 4px;
+    transition: background-color var(--transition),
+    color var(--transition),
+    box-shadow var(--transition);
+}
+
+.portfolio-btn:hover, 
+.portfolio-btn:focus {
+    color: var(--title-color);
+    background-color: var(--accent-color);
+    box-shadow: var(--btn-portfolio-shadow-color);
+}
