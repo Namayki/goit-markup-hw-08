@@ -11,10 +11,15 @@
     width: 44px;
     height: 44px;
     margin-right: 10px;
+
+    &:last-child {
+    margin-right: 0;
+    }
 }
 
-&:last-child {
-    margin-right: 0;
+.social-icon {
+    fill: var(--icon-color);
+    transition: fill var(--transition);
 }
 
 .social-link {
@@ -26,16 +31,16 @@
     align-items: center;
     justify-content: center;
     transition: background-color var(--transition);
-}
 
-&:hover,
-&:focus {
+    &:hover,
+    &:focus {
     background-color: var(--accent-color);
-}
+    }
 
-&:hover .social-icon,
-&:focus .social-icon {
+    &:hover .social-icon,
+    &:focus .social-icon {
     fill: var(--title-color);
+    }
 }
 
 .social-link-dark {

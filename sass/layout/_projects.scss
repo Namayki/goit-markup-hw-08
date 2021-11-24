@@ -11,9 +11,9 @@
     margin-left: 30px;
 }
 
-.projects-link:hover .projects-description,
-.projects-link:focus .projects-description {
-    transform: translateY(0);
+.projects-item-wrap {
+    position: relative;
+    overflow: hidden;
 }
 
 .projects-link {
@@ -21,17 +21,17 @@
     cursor: pointer;
     position: relative;
     transition: background-color var(--transition);  
-}
 
-.projects-item-wrap {
-    position: relative;
-    overflow: hidden;
-}
+    &:hover .projects-description,
+    &:focus .projects-description {
+    transform: translateY(0);
+    }
 
-.projects-link:hover,
-.projects-link:focus {
+    &:hover,
+    &:focus {
     box-shadow: 0px 4px 4px var(--projects-shadow-color);
     transform: translate(0);
+    }
  }
 
 .projects-description {

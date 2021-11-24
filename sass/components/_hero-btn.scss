@@ -18,9 +18,9 @@
             margin: 0 auto;
             transition: background-color var(--transition),
             color var(--transition);
-        }
-    
-        .hero-btn:hover, 
-        .hero-btn:focus {
-            background-color: var(--secondary-accent-color);
+
+            &:hover, 
+            &:focus {
+            background-color: var(--secondary-accent-color)
+            }
         }

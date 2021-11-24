@@ -10,12 +10,11 @@
 .clients-item {
     width: 170px;
     height: 92px;
-}
 
-&:not(:last-child) {
+    &:not(:last-child) {
     margin-right: 30px;
+    }
 }
-
 
 .clients-link {
     width: 100%;
@@ -28,17 +27,11 @@
     color: var(--icon-color);
     transition: color var(--transition),
     border-color var(--transition);
-}
 
-.clients-link:hover,
-.clients-link:focus {
+    &:hover,
+    &:focus {
     border-color: var(--accent-color);
     color: var(--accent-color);
-}
-
-&:hover,
-&:focus {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
+    }
 
 }

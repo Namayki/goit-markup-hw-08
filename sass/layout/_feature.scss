@@ -15,18 +15,16 @@
 
 .feature-list {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
 }
 
 .feature-item {
     width: 270px;
-}
 
-.feature-item {
     &:not(:last-child){
     margin-right: 30px;
     }
-    }
+}
 
 .feature-text {
     font-size: 14px;

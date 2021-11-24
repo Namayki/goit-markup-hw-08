@@ -7,7 +7,7 @@
 .portfolio-btn-link{
     &:not(:last-child) {
     margin-right: 8px;
-}
+    }
 }
 
 .portfolio-btn {
@@ -27,11 +27,11 @@
     transition: background-color var(--transition),
     color var(--transition),
     box-shadow var(--transition);
-}
 
-.portfolio-btn:hover, 
-.portfolio-btn:focus {
+    &:hover, 
+    &:focus {
     color: var(--title-color);
     background-color: var(--accent-color);
     box-shadow: var(--btn-portfolio-shadow-color);
+    }
 }

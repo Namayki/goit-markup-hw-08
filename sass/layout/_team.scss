@@ -20,6 +20,10 @@
 .team-item {
     background-color: var(--title-color);
     box-shadow: var(--team-box-shadow-color);
+
+    &:not(:last-child) {
+    margin-right: 30px;
+    }
 }
 
 .team-item-text {
@@ -27,9 +31,3 @@
     color: var(--second-header-color);
     margin-bottom: 16px;
 }
-
-.team-item {
-    &:not(:last-child){
-    margin-right: 30px;
-    }
-    }

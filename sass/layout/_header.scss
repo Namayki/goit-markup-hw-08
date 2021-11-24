@@ -40,15 +40,14 @@
     border: none;
     line-height: 0;
 
-    @media screen and (min-width: 768px){
-        display: none;
+    @media screen and (min-width: 768px) {
+    display: none;
     }
-}
 
-
-.burger-btn:hover,
-.burger-btn:focus {
+    &:hover
+    &:focus {
     fill: var(--accent-color);
+    }
 }
 
 .burger-btn-icon {
@@ -56,7 +55,7 @@
     height: 40px;
 }
 
-// mobile modal
+// mobile modal nav
 
 .mobile-menu {
     position: fixed;
@@ -100,8 +99,8 @@
 
 .mobile-modal-container {
     display: column;
-    width: 100%;
-    height: 100%;
+    width: 450px;
+    height: 609px;
 }
 
 .modal-nav-menu {
@@ -153,21 +152,22 @@
 
 .modal-social-link {
     cursor: pointer;
-}
-.modal-social-link:not(:last-child) {
-    margin-right: 20px;
-}
 
-.modal-social-link {
+    &:not(:last-child) {
+    margin-right: 20px;
+    }
+
+    & {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--accent-color);
     cursor: pointer;
-}
+    }
 
-.modal-social-link:focus {
+    &:focus {
+    }
    
 }
 

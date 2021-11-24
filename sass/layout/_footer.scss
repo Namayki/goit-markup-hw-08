@@ -30,7 +30,7 @@
     &:not(:last-child){
     margin-bottom:9px
     }
-    }
+}
 
 .footer-address-link {
     display: block;
@@ -41,11 +41,11 @@
     letter-spacing: 0.03em;
     color: var(--title-color);
     transition: color var(--transition); 
-}
 
-.footer-address-link:hover,
-.footer-address-link:focus {
+    &:hover,
+    &:focus {
     color: var(--accent-color);        
+    }
 }
 
 .footer-address-e-mail, 
