@@ -1,3 +1,7 @@
+.social-nav {
+    display: flex;
+}
+
 .social-list {
     display: flex;
     justify-content: center;
@@ -9,7 +13,7 @@
     margin-right: 10px;
 }
 
-.social-item:last-child {
+&:last-child {
     margin-right: 0;
 }
 
@@ -24,12 +28,16 @@
     transition: background-color var(--transition);
 }
 
-.social-link:hover,
-.social-link:focus {
+&:hover,
+&:focus {
     background-color: var(--accent-color);
 }
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
+&:hover .social-icon,
+&:focus .social-icon {
     fill: var(--title-color);
+}
+
+.social-link-dark {
+    background-color: var(--social-link-dark-color);
 }

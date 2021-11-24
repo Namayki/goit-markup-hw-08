@@ -41,7 +41,7 @@
     color var(--transition);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+&:hover,
+&:focus {
     background-color: var(--secondary-accent-color);
 }

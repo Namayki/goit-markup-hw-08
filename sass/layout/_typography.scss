@@ -11,6 +11,12 @@
     width: 370px;
 }
 
+.typography-item {
+    &:not(:last-child){
+    margin-right: 30px;
+    }
+    }
+
 .typography-item-thumb {
     display: flex;
     position: relative;

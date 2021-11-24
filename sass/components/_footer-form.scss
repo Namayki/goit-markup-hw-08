@@ -32,7 +32,7 @@
     transition: border var(--transition);   
 }
 
-.footer-form-input:focus {
+&:focus {
     outline: none;
     border-color: var(--accent-color);
 }

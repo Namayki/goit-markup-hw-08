@@ -26,9 +26,11 @@
     display: inline-block;
 }
 
-.footer-address-connect:not(:last-child) {
-    margin-bottom: 9px;
-}
+.footer-address-connect{
+    &:not(:last-child){
+    margin-bottom:9px
+    }
+    }
 
 .footer-address-link {
     display: block;

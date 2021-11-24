@@ -27,3 +27,9 @@
     color: var(--second-header-color);
     margin-bottom: 16px;
 }
+
+.team-item {
+    &:not(:last-child){
+    margin-right: 30px;
+    }
+    }

@@ -4,8 +4,10 @@
     justify-content: center;
 }  
 
-.portfolio-btn-link:not(:last-child) {
+.portfolio-btn-link{
+    &:not(:last-child) {
     margin-right: 8px;
+}
 }
 
 .portfolio-btn {
