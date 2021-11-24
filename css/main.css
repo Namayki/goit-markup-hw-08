@@ -289,8 +289,7 @@ a {
   transition: background-color var(--transition), color var(--transition);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:hover, .hero-btn:focus {
   background-color: var(--secondary-accent-color);
 }
 
@@ -313,6 +312,11 @@ a {
   margin-right: 0;
 }
 
+.social-icon {
+  fill: var(--icon-color);
+  transition: fill var(--transition);
+}
+
 .social-link {
   width: 100%;
   height: 100%;
@@ -324,14 +328,17 @@ a {
   transition: background-color var(--transition);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-link:hover, .social-link:focus {
   background-color: var(--accent-color);
 }
 
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
   fill: var(--title-color);
+}
+
+.social-link-dark {
+  background-color: var(--social-link-dark-color);
 }
 
 .feature-icon-wrapper {
@@ -351,12 +358,12 @@ a {
   transition: fill var(--transition);
 }
 
-.clients-icon {
-  fill: currentColor;
+.social-icon-white {
+  fill: var(--title-color);
 }
 
-.footer-social-icon-white {
-  fill: var(--title-color);
+.clients-icon {
+  fill: currentColor;
 }
 
 .footer-icon-send {
@@ -394,8 +401,7 @@ a {
   transition: background-color var(--transition), color var(--transition), box-shadow var(--transition);
 }
 
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.portfolio-btn:hover, .portfolio-btn:focus {
   color: var(--title-color);
   background-color: var(--accent-color);
   box-shadow: var(--btn-portfolio-shadow-color);
@@ -491,12 +497,6 @@ a {
 }
 
 /* -------------- modal form --------------- */
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -623,8 +623,9 @@ a {
   background-repeat: no-repeat;
 }
 
-.modal-form-checkbox:focus +
-.modal-form-checkbox-label::before {
+.modal-form-checkbox:checked +
+.modal-form-checkbox-label::before:focus + .modal-form-checkbox:checked +
+.modal-form-checkbox-label::before::before {
   outline: 2px solid var(--accent-color);
 }
 
@@ -661,8 +662,7 @@ a {
   transition: transform-color var(--transition);
 }
 
-.modal-btn-close:hover,
-.modal-btn-close:focus {
+.modal-btn-close:hover, .modal-btn-close:focus {
   color: var(--accent-color);
 }
 
@@ -685,8 +685,7 @@ a {
   transition: background-color var(--transition), color var(--transition);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover, .modal-btn:focus {
   background-color: var(--secondary-accent-color);
 }
 
@@ -733,8 +732,7 @@ a {
   }
 }
 
-.burger-btn:hover,
-.burger-btn:focus {
+.burger-btn:hover .burger-btn:focus {
   fill: var(--accent-color);
 }
 
@@ -784,8 +782,8 @@ a {
 
 .mobile-modal-container {
   display: column;
-  width: 100%;
-  height: 100%;
+  width: 450px;
+  height: 609px;
 }
 
 .modal-nav-menu {
@@ -892,12 +890,16 @@ a {
   content: "";
   width: 100%;
   height: 4px;
-  bottom: -33px;
+  bottom: -35px;
   left: 0;
   border-radius: 2px;
   display: block;
   background-color: var(--accent-color);
   position: absolute;
+}
+
+.menu-link:hover, .menu-link:focus {
+  color: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -906,15 +908,14 @@ a {
   }
 }
 
+.header-contacts-item:hover, .header-contacts-item:focus {
+  color: var(--accent-color);
+}
+
 @media screen and (min-width: 1200px) {
   .header-contacts-item:not(:last-child) {
     margin-right: 30px;
   }
-}
-
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--accent-color);
 }
 
 .envelope-icon,
@@ -953,6 +954,7 @@ a {
 .header-contacts-link {
   display: flex;
   align-items: center;
+  font-weight: 500;
   color: var(--second-header-color);
   transition: color var(--transition);
 }
@@ -973,8 +975,7 @@ a {
   }
 }
 
-.header-contacts-link:hover,
-.header-contacts-link:focus {
+.header-contacts-link:hover, .header-contacts-link:focus {
   color: var(--accent-color);
 }
 
@@ -1031,21 +1032,60 @@ a {
 }
 
 .feature {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .feature {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.feature-container {
+  padding: 0px 0px;
 }
 
 .feature-list {
   display: flex;
-  flex-direction: column;
 }
 
-.feature-item {
-  width: 270px;
+@media screen and (max-width: 767px) {
+  .feature-list {
+    flex-direction: column;
+  }
 }
 
-.feature-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .feature-item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature-item {
+    width: 354px;
+    margin-top: 30px;
+  }
+  .feature-item {
+    flex-basis: calc(100% / 2 - 30px);
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-item {
+    width: 270px;
+  }
 }
 
 .feature-text {
@@ -1123,14 +1163,14 @@ a {
   box-shadow: var(--team-box-shadow-color);
 }
 
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-item-text {
   font-weight: normal;
   color: var(--second-header-color);
   margin-bottom: 16px;
-}
-
-.team-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .clients {
@@ -1163,8 +1203,7 @@ a {
   transition: color var(--transition), border-color var(--transition);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients-link:hover, .clients-link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
@@ -1187,9 +1226,9 @@ a {
   margin-left: 30px;
 }
 
-.projects-link:hover .projects-description,
-.projects-link:focus .projects-description {
-  transform: translateY(0);
+.projects-item-wrap {
+  position: relative;
+  overflow: hidden;
 }
 
 .projects-link {
@@ -1199,13 +1238,12 @@ a {
   transition: background-color var(--transition);
 }
 
-.projects-item-wrap {
-  position: relative;
-  overflow: hidden;
+.projects-link:hover .projects-description,
+.projects-link:focus .projects-description {
+  transform: translateY(0);
 }
 
-.projects-link:hover,
-.projects-link:focus {
+.projects-link:hover, .projects-link:focus {
   box-shadow: 0px 4px 4px var(--projects-shadow-color);
   transform: translate(0);
 }
@@ -1255,10 +1293,6 @@ a {
   margin-bottom: 9px;
 }
 
-.footer-address-connect:not(:last-child) {
-  margin-bottom: 9px;
-}
-
 .footer-address-link {
   display: block;
   font-style: normal;
@@ -1270,8 +1304,7 @@ a {
   transition: color var(--transition);
 }
 
-.footer-address-link:hover,
-.footer-address-link:focus {
+.footer-address-link:hover, .footer-address-link:focus {
   color: var(--accent-color);
 }
 
