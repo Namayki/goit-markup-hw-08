@@ -1032,8 +1032,9 @@ a {
 }
 
 .feature {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1044,10 +1045,6 @@ a {
 }
 
 .feature-container {
-  padding: 0px 0px;
-}
-
-.feature-list {
   display: flex;
 }
 
@@ -1059,33 +1056,49 @@ a {
 
 @media screen and (min-width: 768px) {
   .feature-list {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .feature-item {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .feature-item {
-    width: 354px;
-    margin-top: 30px;
-  }
-  .feature-item {
-    flex-basis: calc(100% / 2 - 30px);
-    font-size: 32px;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .feature-item {
-    width: 270px;
+  .feature-list {
+    display: inline-block;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .feature-list .feature-item {
+    width: 450px;
+  }
+}
+
+.feature-list .feature-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .feature-list {
+    width: 354px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+.feature-list {
+  flex-basis: calc(100% / 2 - 30px);
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-list {
+    width: 270px;
+    display: flex;
+  }
+}
+
+.feature-list {
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .feature-text {
@@ -1096,12 +1109,35 @@ a {
 }
 
 .typography {
+  top: 0;
+  left: 0;
+  width: 100%;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 767px) {
+  .typography {
+    display: none;
+  }
 }
 
 .typography-list {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .typography-list {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .typography-list {
+    justify-content: space-between;
+    padding-bottom: 25px;
+  }
 }
 
 .typography-item {
