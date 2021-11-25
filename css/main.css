@@ -995,20 +995,20 @@ a {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero/hero-mobile@2x.jpg);
+    background-image: linear-gradient(var(--linear-gradient-color), var(--linear-gradient-color), url(../images/hero/hero-mobile@2x.jpg));
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../images/hero/hero-tablet.jpg);
+    background-image: linear-gradient(var(--linear-gradient-color), var(--linear-gradient-color), url(../images/hero/hero-tablet.jpg));
     min-width: 768px;
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero/hero-tablet@2x.jpg);
+    background-image: linear-gradient(var(--linear-gradient-color), var(--linear-gradient-color), url(../images/hero/hero-tablet@2x.jpg));
   }
 }
 
@@ -1016,14 +1016,14 @@ a {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../images/hero/img-hero.jpg);
+    background-image: linear-gradient(var(--linear-gradient-color), var(--linear-gradient-color), url(../images/hero/hero.jpg));
     min-width: 1200px;
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero/img-hero@2x.jpg);
+    background-image: linear-gradient(var(--linear-gradient-color), var(--linear-gradient-color), url(../images/hero/hero@2x.jpg));
   }
 }
 
@@ -1070,42 +1070,23 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .feature-container
-.feature-list .feature-item {
-    width: 450px;
+  .feature-item:not(:last-child) {
+    margin-bottom: 30px;
   }
-}
-
-.feature-container
-.feature-list .feature-item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  .feature-container
-.feature-list {
-    width: 354px;
+  .feature-item {
     margin-top: 30px;
     margin-left: 30px;
+    flex-basis: calc(100% / 2 - 30px);
   }
-}
-
-.feature-container
-.feature-list {
-  flex-basis: calc(100% / 2 - 30px);
 }
 
 @media screen and (min-width: 1200px) {
-  .feature-container
-.feature-list {
-    width: 270px;
-    display: flex;
+  .feature-item {
+    flex-basis: calc(100% / 4 - 30px);
   }
-}
-
-.feature-container
-.feature-list {
-  flex-basis: calc(100% / 4 - 30px);
 }
 
 .feature-text {
@@ -1207,12 +1188,6 @@ a {
   padding-bottom: 24px;
 }
 
-@media screen and (min-width: 768px) {
-  .team-container {
-    flex-direction: column;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .team-container {
     padding-top: 30px;
@@ -1228,20 +1203,45 @@ a {
   display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  .team-list {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+  }
+}
+
 .team-item {
   background-color: var(--title-color);
   box-shadow: var(--team-box-shadow-color);
 }
 
+.team-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .team-item {
-    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 2 - 30px);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .team-item:not(:last-child) {
-    margin-right: 30px;
+  .team-item {
+    flex-basis: calc(100% / 4 - 30px);
   }
 }
 
