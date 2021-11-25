@@ -28,7 +28,6 @@
     background-image: url(../images/hero/hero-tablet.jpg);
     min-width: 768px;
 
-
 // 2x screens, retina, 768x1024 image
 @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -44,13 +43,13 @@
     padding-bottom: 200px;
     background-image: url(../images/hero/img-hero.jpg);
     min-width: 1200px;
-}
 
 // 2x screens, retina, 1200x1880 image
 @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: url(../images/hero/img-hero@2x.jpg);
+}
 }
 }
 
