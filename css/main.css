@@ -1044,18 +1044,18 @@ a {
   }
 }
 
-.feature-container {
-  display: flex;
-}
-
 @media screen and (max-width: 767px) {
-  .feature-list {
+  .feature-container
+.feature-list {
+    display: flex;
     flex-direction: column;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .feature-list {
+  .feature-container
+.feature-list {
+    display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
@@ -1063,40 +1063,47 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .feature-list {
-    display: inline-block;
+  .feature-container
+.feature-list {
+    display: flex;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .feature-list .feature-item {
+  .feature-container
+.feature-list .feature-item {
     width: 450px;
   }
 }
 
+.feature-container
 .feature-list .feature-item:not(:last-child) {
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  .feature-list {
+  .feature-container
+.feature-list {
     width: 354px;
     margin-top: 30px;
     margin-left: 30px;
   }
 }
 
+.feature-container
 .feature-list {
   flex-basis: calc(100% / 2 - 30px);
 }
 
 @media screen and (min-width: 1200px) {
-  .feature-list {
+  .feature-container
+.feature-list {
     width: 270px;
     display: flex;
   }
 }
 
+.feature-container
 .feature-list {
   flex-basis: calc(100% / 4 - 30px);
 }
@@ -1176,14 +1183,41 @@ a {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: var(--background-team-color);
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-container {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .team-list {
@@ -1199,8 +1233,16 @@ a {
   box-shadow: var(--team-box-shadow-color);
 }
 
-.team-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .team-item {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team-item-text {
