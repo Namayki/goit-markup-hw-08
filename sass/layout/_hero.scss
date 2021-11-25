@@ -19,24 +19,25 @@
 @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    & {
     background-image: url(../images/hero/hero-mobile@2x.jpg);
 }
-}
+
+// 768px
 
 @media screen and (min-width: 768px) {
     background-image: url(../images/hero/hero-tablet.jpg);
     min-width: 768px;
-} 
+
 
 // 2x screens, retina, 768x1024 image
 @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    & {
     background-image: url(../images/hero/hero-tablet@2x.jpg);
-    }
 }
+} 
+
+// 1200px
 
 @media screen and (min-width: 1200px) {
     padding-top: 200px;
@@ -49,9 +50,7 @@
 @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    & {
     background-image: url(../images/hero/img-hero@2x.jpg);
-    }
 }
 }
 

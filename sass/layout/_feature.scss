@@ -26,35 +26,28 @@
     @media screen and (min-width: 1200px) {
         display: flex;
     }   
+
 }  
 
-.feature-item { 
+.feature-item {
 
     @media screen and (max-width: 767px) {
         width: 450px;
-    }
-
-        &:not(:last-child){
+        :not(:last-child);
         margin-bottom: 30px;
-        }
-
+    }
+        
     @media screen and (min-width: 768px) {
         width: 354px;
         margin-top: 30px;
         margin-left: 30px;
-    }
-
-        & {
-        flex-basis: calc(100% / 2 - 30px);    
+        flex-basis:calc(100% / 2 - 30px);
     }
 
     @media screen and (min-width: 1200px) {
         width: 270px;
         display: flex;
-    }
-
-        & {
-        flex-basis: calc(100% / 4 - 30px); 
+        flex-basis:calc(100% / 4 - 30px);
     }
 }
 
