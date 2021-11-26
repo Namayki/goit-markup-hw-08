@@ -107,10 +107,18 @@
 
                     <div class="modal-social-nav">
                         <ul class="modal-social-item">
-                            <li class="modal-social-link">Instagram</li>
-                            <li class="modal-social-link">Twitter</li>
-                            <li class="modal-social-link">Facebook</li>
-                            <li class="modal-social-link">Linkedin</li>
+                            <li class="modal-social-link">
+                                <a class="social" href="Instagram">Instagram</a>
+                            </li>
+                            <li class="modal-social-link">
+                                <a class="social" href="Twitter">Twitter</a>
+                            </li>
+                            <li class="modal-social-link">
+                                <a class="social" href="Facebook">Facebook</a>
+                            </li>
+                            <li class="modal-social-link">
+                                <a class="social" href="Linkedln">Linkedln</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -229,7 +237,15 @@
                     <ul class="typography-list list">
                         <li class="typography-item">
                             <div class="typography-item-thumb">
-                                <img src="./images/typography/box1.jpg" width="370" height="294"  />
+                                <picture>
+                                    <picture>
+                                        <source
+                                        media="(min-width: 1200px)"
+                                        srcset="./images/typography/occ-1-desktop.jpg 1x,
+                                        ./images/typography/occ-1-desktop@2x.jpg 2x"/>
+                                        <img class="typography-img" src="#" alt="laptop" loading="lazy" />
+                                    </picture>
+                                </picture>
                                 <div class="typography-thumb-about">
                                     <p class="typography-item-about">ДЕCКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                                 </div>
@@ -237,7 +253,15 @@
                         </li>
                         <li class="typography-item">
                             <div class="typography-item-thumb">
-                                <img src="./images/typography/box2.jpg" width="370" height="294" alt="laptop" />
+                                <picture>
+                                    <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                    ./images/typography/occ-2-desktop.jpg 1x,
+                                    ./images/typography/occ-2-desktop@2x.jpg 2x"
+                                    />
+                                    <img class="typography-img" src="#" alt="notebook" loading="lazy" />
+                                </picture>
                                 <div class="typography-thumb-about">
                                     <p class="typography-item-about">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                                 </div>
@@ -245,7 +269,15 @@
                         </li>
                         <li class="typography-item">
                             <div class="typography-item-thumb">
-                                <img src="./images/typography/box3.jpg" width="370" height="294" alt="tablet" />
+                                <picture>
+                                    <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                    ./images/typography/occ-3-desktop.jpg 1x,
+                                    ./images/typography/occ-3-desktop@2x.jpg 2x"
+                                    />
+                                    <img class="typography-img" src="#" alt="tablet" loading="lazy" />
+                                </picture>
                                 <div class="typography-thumb-about">
                                     <p class="typography-item-about">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                                 </div>

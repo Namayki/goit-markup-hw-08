@@ -1,5 +1,4 @@
 .header {
-  // position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -22,16 +21,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // position: relative;
 }
 
-// .header-contacts {
-//     display: flex;
-//     align-items: center;
-//     margin-left: auto;
-// }
-
-// burger button
+// header burger button
 
 .burger-btn {
   background-color: transparent;
@@ -39,13 +31,15 @@
   padding: 0;
   border: none;
   line-height: 0;
+  transition: transform-color var(--transition);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
-  }
-
-  &:hover &:focus {
-    fill: var(--accent-color);
   }
 }
 
@@ -64,7 +58,7 @@
   width: 100vw;
   height: 100vh;
   padding: 10px 15px;
-  background-color: wheat;
+  background-color: var(--title-color);
   padding: 48px 25px;
   opacity: 0;
   visibility: hidden;
@@ -88,6 +82,12 @@
   padding: 0;
   border: none;
   line-height: 0;
+  transition: transform-color var(--transition);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .close-btn-icon {
@@ -99,6 +99,11 @@
   display: column;
   width: 480px;
   height: 796px;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .modal-nav-menu {
@@ -114,6 +119,10 @@
 
 .modal-nav-link {
   cursor: pointer;
+
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .modal-menu-item:not(:last-child),
@@ -133,6 +142,10 @@
   font-size: 34px;
   line-height: 1.17;
   color: var(--second-header-color);
+
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .modal-contacts-mail {
@@ -141,6 +154,10 @@
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--second-header-color);
+
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .modal-social-item {
@@ -163,13 +180,10 @@
     color: var(--accent-color);
     cursor: pointer;
   }
-
-  // & :focus {
-  // }
 }
 
-.modal-nav-link:hover .modal-contacts-link .modal-social-link,
-.modal-nav-link:focus .modal-contacts-link .modal-social-link {
+.modal-nav-link:hover .modal-contacts-link .modal-social-link .social,
+.modal-nav-link:focus .modal-contacts-link .modal-social-link .social {
   color: var(--accent-color);
 }
 

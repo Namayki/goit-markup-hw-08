@@ -18,17 +18,23 @@
 
 .footer-form-wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   @media screen and (min-width: 1200px) {
-    display: flex;
     align-items: center;
   }
 }
 
 .footer-label {
-  margin-right: 12px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
 }
 
 .footer-form-input {
@@ -36,7 +42,7 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   height: 50px;
-  width: 358px;
+  width: 450px;
   align-items: center;
   padding-left: 16px;
   color: var(--title-color);
@@ -49,5 +55,9 @@
   &:focus {
     outline: none;
     border-color: var(--accent-color);
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
   }
 }

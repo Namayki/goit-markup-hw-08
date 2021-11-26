@@ -1,49 +1,50 @@
 .portfolio-btn-list {
-        display: flex;
-        align-content: flex-start;
-        padding-bottom: 40px;
-    
-    @media screen and (min-width: 767px) {
-        padding-bottom: 30px;
-        display: flex;
-        justify-content: center;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-bottom: 40px;
 
-    @media screen and (min-width: 1200px) {
-       padding-bottom: 50px;
-       display: flex;
-       justify-content: center;
-    }
-}  
+  @media screen and (min-width: 767px) {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
 
-.portfolio-btn-link{
-    &:not(:last-child) {
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.portfolio-btn-link {
+  &:not(:last-child) {
     margin-right: 8px;
-    }
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio-btn {
-    padding-top: 6px;
-    padding-right: 22px;
-    padding-bottom: 6px;
-    padding-left: 22px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--header-color);
-    background-color: var(--background-team-color);
-    border-radius: 4px;
-    transition: background-color var(--transition),
-    color var(--transition),
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+  background-color: var(--background-team-color);
+  border-radius: 4px;
+  transition: background-color var(--transition), color var(--transition),
     box-shadow var(--transition);
 
-    &:hover, 
-    &:focus {
+  &:hover,
+  &:focus {
     color: var(--title-color);
     background-color: var(--accent-color);
     box-shadow: var(--btn-portfolio-shadow-color);
-    }
+  }
 }
