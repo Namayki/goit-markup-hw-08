@@ -1,27 +1,25 @@
-        
-        .logo {
-            font-family: var(--logo-font);
-            font-weight: bold;
-            font-size: 26px;
-            line-height: 1.19;
-            letter-spacing: 0.03em;
-            color: var(--accent-color);
-        }
-    
-        .header-logo {
-            margin-right: 93px;    
-        }
-        
-        .header-logo-dark {
-            color: var(--header-logo-dark-color);
-        }
-    
-        .footer-logo {
-            display: block;
-            margin-bottom: 20px;
-        }
-    
-        .footer-logo-light {
-            color: var(--title-color);
-        }
-    
+.logo {
+  font-family: var(--logo-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.header-logo {
+  margin-right: 93px;
+}
+
+.header-logo-dark {
+  color: var(--header-logo-dark-color);
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-logo-light {
+  color: var(--title-color);
+}

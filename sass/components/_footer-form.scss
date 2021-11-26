@@ -1,44 +1,53 @@
 .footer-form-container {
-    // display: flex;
-    // flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // display: flex;
+  // flex-direction: column;
 
-
-@media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
-    }
+  }
 }
 
 .footer-form {
-    padding-right: 0;
-    margin-right: 0;
+  padding-right: 0;
+  margin-right: 0;
 }
 
 .footer-form-wrapper {
-    display: flex; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
     align-items: center;
+  }
 }
 
 .footer-label {
-    margin-right: 12px;
+  margin-right: 12px;
 }
 
 .footer-form-input {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    height: 50px;
-    width: 358px;
-    align-items: center;
-    padding-left: 16px;
-    color: var(--title-color);
-    border: 1px solid var(--footer-form-color);
-    filter: drop-shadow 0px 4px 4px var(--footer-form-filter-color);
-    border-radius: 4px;
-    background-color: var(--background-origin-color);
-    transition: border var(--transition);   
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  height: 50px;
+  width: 358px;
+  align-items: center;
+  padding-left: 16px;
+  color: var(--title-color);
+  border: 1px solid var(--footer-form-color);
+  filter: drop-shadow 0px 4px 4px var(--footer-form-filter-color);
+  border-radius: 4px;
+  background-color: var(--background-origin-color);
+  transition: border var(--transition);
 
-    &:focus {
+  &:focus {
     outline: none;
     border-color: var(--accent-color);
-    }
+  }
 }

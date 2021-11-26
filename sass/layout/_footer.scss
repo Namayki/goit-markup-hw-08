@@ -1,75 +1,88 @@
 .footer {
-    background-color: var(--background-origin-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-origin-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .footer-container {
-    
-  
-
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: center;
+  }
 
-    }     
-
-@media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    }
+  }
 }
 
-.footer-nav {}
+// .footer-nav {}
 
 /* .footer-nav {
     margin-right: 70px;
 } */
 
- /* --------------- footer address ---------------  */
+/* --------------- footer address ---------------  */
+
+.footer-address-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+  }
+}
 
 .footer-address {
-
-
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     font-style: normal;
-    }
+  }
 }
 
 .footer-address-menu {
-    display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    @media screen and (min-width: 1200px) {
-        display: inline-block;
-        }
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+  }
 }
 
-.footer-address-connect{
-    &:not(:last-child){
-    margin-bottom:9px
-    }
+.footer-address-connect {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-address-link {
-    display: block;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px; 
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--title-color);
-    transition: color var(--transition); 
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  transition: color var(--transition);
 
-    .footer-address-link:hover,
-    .footer-address-link:focus {
-        color: var(--accent-color);   
+  .footer-address-link:hover,
+  .footer-address-link:focus {
+    color: var(--accent-color);
     // &:hover,
     // &:focus {
-    // color: var(--accent-color);        
-    }
+    // color: var(--accent-color);
+  }
 }
 
-.footer-address-e-mail, 
+.footer-address-e-mail,
 .footer-address-tel {
-    color: var(--footer-contacts-color);
+  color: var(--footer-contacts-color);
 }

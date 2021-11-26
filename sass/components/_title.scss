@@ -1,88 +1,94 @@
 .hero-title {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.6;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--title-color);
-    width: 360px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--title-color);
+  width: 360px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 
-@media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 696px;
     font-size: 44px;
     line-height: 1.36;
     min-width: 1200px;
-}
+  }
 }
 
 .feature-title {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--header-color);
-    margin-bottom: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--header-color);
+  margin-bottom: 10px;
 }
 
 .typography-title,
-.team-title, 
+.team-title,
 .clients-title {
-    font-style: normal;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--header-color);
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
 
-    @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: 28px;
     line-height: 1.17;
     margin-bottom: 30px;
-    }
+  }
 
-    @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.16;
     margin-bottom: 50px;
-    }
+  }
 }
 
 .team-item-title {
-    margin-bottom: 10px;
-    font-weight: 500;
-    color: var(--header-color);
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: var(--header-color);
 }
 
 .projects-title-container {
-    background-color: var(--title-color);
-    border: 1px solid var(--projects-border-color);
-    box-sizing: border-box;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    border-top: none;
-    text-align: left;
+  background-color: var(--title-color);
+  border: 1px solid var(--projects-border-color);
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-top: none;
+  text-align: left;
 }
 
 .projects-title {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.03em;
-    margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  margin-bottom: 4px;
 }
 
 .footer-title {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--title-color);
-    margin-bottom: 20px;
-    display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+  margin-bottom: 20px;
+  display: block;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    align-items: center;
+  }
 }
