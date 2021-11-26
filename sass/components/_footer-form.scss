@@ -1,5 +1,11 @@
 .footer-form-container {
+    // display: flex;
+    // flex-direction: column;
+
+
+@media screen and (min-width: 1200px) {
     display: flex;
+    }
 }
 
 .footer-form {

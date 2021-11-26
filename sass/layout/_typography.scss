@@ -4,7 +4,8 @@
     width: 100%;
     padding-bottom: 94px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 0px) and
+    (max-width: 1199px) {
     display: none;
     }
 
@@ -12,27 +13,15 @@
 
 .typography-list {
     display: flex;
-    flex-direction: column;
-    display: none;
-    
-
-    @media screen and (min-width: 768px) {
-        flex-wrap: wrap;
-    }
-
-    @media screen and (min-width: 1200px) {
-        justify-content: space-between;
-        // padding-top: 24px;
-        padding-bottom: 25px;
-    }
+    justify-content: space-between;
 }
 
 .typography-item {
     width: 370px;
-    
-    &:not(:last-child){
-    margin-right: 30px;
-    }
+
+    &:not(:last-child) {
+        margin-right: 30px;
+        }
 }
 
 .typography-item-thumb {

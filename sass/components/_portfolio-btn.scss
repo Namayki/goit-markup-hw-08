@@ -1,7 +1,19 @@
 .portfolio-btn-list {
-    display: flex;
-    padding-bottom: 50px;
-    justify-content: center;
+        display: flex;
+        align-content: flex-start;
+        padding-bottom: 40px;
+    
+    @media screen and (min-width: 767px) {
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+       padding-bottom: 50px;
+       display: flex;
+       justify-content: center;
+    }
 }  
 
 .portfolio-btn-link{

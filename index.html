@@ -229,7 +229,51 @@
                     <ul class="typography-list list">
                         <li class="typography-item">
                             <div class="typography-item-thumb">
-                                <img src="./images/typography/box1.jpg" width="370" height="294" alt="PC" />
+                                <picture>
+                                    <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                    ./images/typography/occ-1-desktop.webp 1x,
+                                    ./images/typography/occ-1-desktop@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                    />
+                                    <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                    ./images/typography/occ-1-desktop.jpg 1x,
+                                    ./images/typography/occ-1-desktop@2x.jpg 2x
+                                    "/>
+                                    <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                    ./images/typography/occ-1-desktop.webp 1x,
+                                    ./images/typography/occ-1-desktop@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                    />
+                                    <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                    ./images/typography/occ-1-desktop.jpg 1x,
+                                    ./images/typography/occ-1-desktop@2x.jpg 2x
+                                    "/>
+                                    <source
+                                    media="(min-width: 480px)"
+                                    srcset="
+                                    ./images/typography/occ-1-desktop.webp 1x,
+                                    ./images/typography/occ-1-desktop@2x.webp 2x
+                                    "
+                                    type="image/webp"/>
+                                    <source
+                                    media="(min-width: 480px)"
+                                    srcset="
+                                    ./images/typography/occ-1-desktop.jpg 1x,
+                                    ./images/typography/occ-1-desktop@2x.jpg 2x
+                                    "/>
+                                <img class="typography" src="#" alt="PC" loading="lazy" />
+                                </picture>
+                                <!-- <img src="./images/typography/box1.jpg" width="370" height="294"  /> -->
                                 <div class="typography-thumb-about">
                                     <p class="typography-item-about">ДЕCКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                                 </div>
@@ -265,7 +309,49 @@
                     </h2>
                     <ul class="team-list list">
                         <li class="team-item">
-                            <img src="./images/team/img(1).jpg" width="270" height="260" alt="team card 1" />
+                            <picture>
+                                <source
+                                media="(min-width: 1200px)"
+                                srcset="
+                                ./images/team/team-1-desktop.webp 1x,
+                                ./images/team/team-1-desktop@2x.webp 2x
+                                "
+                                type="image/webp"
+                                />
+                                <source
+                                media="(min-width: 1200px)"
+                                srcset="
+                                ./images/team/team-1-desktop.jpg 1x,
+                                ./images/team/team-1-desktop@2x.jpg 2x
+                                "/>
+                                <source
+                                media="(min-width: 768px)"
+                                srcset="
+                                ./images/team/team-1-tablet.webp 1x,
+                                ./images/team/team-1-tablet@2x.webp 2x
+                                "
+                                type="image/webp"/>
+                                <source
+                                media="(min-width: 768px)"
+                                srcset="
+                                ./images/team/team-1-tablet.jpg 1x,
+                                ./images/team/team-1-tablet@2x.jpg 2x
+                                "/>
+                                <source
+                                media="(min-width: 480px)"
+                                srcset="
+                                ./images/team/team-1.webp 1x,
+                                ./images/team/team-1@2x.webp 2x
+                                "
+                                type="image/webp"/>
+                                <source
+                                media="(min-width: 480px)"
+                                srcset="
+                                ./images/team/team-1.jpg 1x,
+                                ./images/team/team-1@2x.jpg 2x
+                                "/>
+                            <img class="team-img" src="#" alt="team card 1" loading="lazy" />
+                            </picture>
                             <div class="team-container">
                                 <h3 class="team-item-title">Игорь Демьяненко</h3>
                                 <p class="team-item-text">Product Designer</p>
@@ -302,7 +388,7 @@
                             </div>
                         </li>
                         <li class="team-item">
-                            <img src="./images/team/img(2).jpg" width="270" height="260" alt="team card 2" />
+                            <img class="team-img" src="./images/team/img(2).jpg" width="270" height="260" alt="team card 2" />
                             <div class="team-container">
                                 <h3 class="team-item-title">Ольга Репина</h3>
                                 <p class="team-item-text">Frontend Developer</p>
@@ -338,7 +424,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="team-item">
+                        <li class="team-item team-item3">
                             <img src="./images/team/img(3).jpg" width="270" height="260" alt="team card 3" />
                             <div class="team-container">
                                 <h3 class="team-item-title">Николай Тарасов</h3>
@@ -375,7 +461,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="team-item">
+                        <li class="team-item team-item4">
                             <img src="./images/team/img(4).jpg" width="270" height="260" alt="team card 4" />
                             <div class="team-container">
                                 <h3 class="team-item-title">Михаил Ермаков</h3>
@@ -477,7 +563,7 @@
 
         <!-- footer navigation -->
         
-        <!-- <footer class="footer">
+        <footer class="footer">
             <div class="container footer-container">
                 <div class="footer-nav">
                     <a class="footer-logo logo link" href="./index.html">
@@ -487,7 +573,8 @@
                         </span>
                     </a>
 
-                    footer address
+                    <!-- footer address -->
+                    
                     <address class="footer-address">
                         <ul class="footer-address-menu list">
                             <li class="footer-address-connect">
@@ -509,37 +596,37 @@
                     </address>
                 </div>
 
-                footer social container
+                <!-- footer social navigation -->
 
-                <div class="footer-social-container">
-                    <b class="footer-social-title">
+                <div class="footer-social-nav">
+                    <b class="footer-title">
                         ПРИСОЕДИНЯЙТЕСЬ
                     </b>
-                    <ul class="footer-social-nav list">
-                        <li class="footer-social-item">
-                            <a href="" class="footer-social-link footer-social-link-dark">
-                                <svg class="footer-social-icon-white" width="20" height="20">
+                    <ul class="social-nav list">
+                        <li class="social-item">
+                            <a href="" class="social-link social-link-dark">
+                                <svg class="social-icon-white" width="20" height="20">
                                     <use href="./images/sprite.svg/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-social-item">
-                            <a href="" class="footer-social-link footer-social-link-dark">
-                                <svg class="footer-social-icon-white" width="20" height="20">
+                        <li class="social-item">
+                            <a href="" class="social-link social-link-dark">
+                                <svg class="social-icon-white" width="20" height="20">
                                     <use href="./images/sprite.svg/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-social-item">
-                            <a href="" class="footer-social-link footer-social-link-dark">
-                                <svg class="footer-social-icon-white" width="20" height="20">
+                        <li class="social-item">
+                            <a href="" class="social-link social-link-dark">
+                                <svg class="social-icon-white" width="20" height="20">
                                     <use href="./images/sprite.svg/icons.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-social-item">
-                            <a href="" class="footer-social-link footer-social-link-dark">
-                                <svg class="footer-social-icon-white" width="20" height="20">
+                        <li class="social-item">
+                            <a href="" class="social-link social-link-dark">
+                                <svg class="social-icon-white" width="20" height="20">
                                     <use href="./images/sprite.svg/icons.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
@@ -547,11 +634,11 @@
                     </ul>
                 </div>
 
-                footer form  
+                <!-- footer form   -->
 
                 <div class="footer-form-container">
                     <form action="#" class="footer-form">
-                        <b class="social-title">
+                        <b class="footer-title">
                             ПОДПИШИТЕСЬ НА РАССЫЛКУ
                         </b>
 
@@ -560,7 +647,7 @@
                                 <input class="footer-form-input" type="email" name="user-mail" placeholder="E-mail" />
                             </label>
 
-                            <button class="footer-btn" type="submit">
+                            <button class="footer-form-btn" type="submit">
                                 Подписаться
                                 <svg class="footer-icon-send" width="24" height="24">
                                     <use href="./images/sprite.svg/icons.svg#icon-send"></use>
@@ -570,11 +657,11 @@
                     </form>
                 </div>
             </div>
-        </footer>  -->
+        </footer> 
 
         <!--  modal section  -->
 
-        <!-- <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button type="button" class="modal-btn-close" data-modal-close>
                     <svg class="modal-close-icon" width="20" height="20">
@@ -642,10 +729,10 @@
             </div>
         </div>
 
-    </body> -->
+    </body>
 
     <!-<script src="./js/menu.js"></script> -->
 
     <script src="./js/menu.js"></script>
-    <!-- <script src="./js/modal.js"></script>  -->
+    <script src="./js/modal.js"></script> 
 </html>
