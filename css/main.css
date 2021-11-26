@@ -234,6 +234,7 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -242,7 +243,6 @@ a {
   .clients-title {
     font-size: 28px;
     line-height: 1.17;
-    margin-bottom: 30px;
   }
 }
 
@@ -859,8 +859,8 @@ a {
 
 .mobile-modal-container {
   display: column;
-  width: 450px;
-  height: 609px;
+  width: 480px;
+  height: 796px;
 }
 
 .modal-nav-menu {
@@ -927,10 +927,8 @@ a {
   cursor: pointer;
 }
 
-.modal-nav-link:hover .modal-contacts-link
-.modal-social-link,
-.modal-nav-link:focus .modal-contacts-link
-.modal-social-link {
+.modal-nav-link:hover .modal-contacts-link .modal-social-link,
+.modal-nav-link:focus .modal-contacts-link .modal-social-link {
   color: var(--accent-color);
 }
 
@@ -1481,6 +1479,12 @@ a {
   background-color: var(--background-origin-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 768px) {
