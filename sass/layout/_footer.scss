@@ -14,8 +14,14 @@
 }
 
 .footer-container {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    // text-align: center;
   }
 
   @media screen and (min-width: 1200px) {
@@ -28,8 +34,6 @@
 /* --------------- footer address ---------------  */
 
 .footer-address-nav {
-  display: flex;
-
   @media screen and (max-width: 767px) {
     flex-direction: column;
     justify-content: center;
