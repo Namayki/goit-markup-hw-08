@@ -341,12 +341,6 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footer-social-nav {
-    display: flex;
-  }
-}
-
 .social-nav {
   display: flex;
 }
@@ -490,6 +484,8 @@ a {
   background-color: var(--accent-color);
   border-radius: 4px;
   padding: 10px 29px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -501,6 +497,12 @@ a {
 .footer-form {
   padding-right: 0;
   margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form-wrapper {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1561,6 +1563,8 @@ a {
   .footer-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
   }
 }
 

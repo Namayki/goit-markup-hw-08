@@ -1,12 +1,14 @@
 .footer-form-btn {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    color: var(--title-color);
-    background-color: var(--accent-color);
-    border-radius: 4px;
-    padding: 10px 29px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  padding: 10px 29px;
+  margin-right: auto;
+  margin-left: auto;
 }
