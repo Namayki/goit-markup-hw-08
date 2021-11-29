@@ -6,9 +6,12 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--title-color);
-  width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 480px) {
+    width: 360px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 696px;
@@ -85,19 +88,16 @@
   text-transform: uppercase;
   color: var(--title-color);
   margin-bottom: 20px;
-
-  @media screen and (min-width: 768px) {
-    display: block;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-around;
-  }
+  display: block;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
 
   @media screen and (min-width: 1200px) {
-    display: block;
-    justify-content: center;
-    align-items: center;
+    // display: block;
+    // justify-content: center;
+    // align-items: center;
   }
 }
