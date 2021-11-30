@@ -25,7 +25,7 @@
         <!-- top line bd -->
         <header class="header">
             <!-- header container -->
-            <div class="container header-container">
+            <class class="container header-container">
                 <!-- menu nav -->
                 <nav class="header-nav current">
                     <a href="./index.html" class="header-logo link logo">Web<span class="header-logo-dark">Studio</span></a>
@@ -49,22 +49,19 @@
                     </ul>
                 </nav>
                 
-                <!-- start mobile menu -->
-               
-                <button 
-                type="button" 
-                class="burger-btn is-open" 
-                aria-expanded="false" data-menu-open>
-                    <svg class="burger-btn-icon" >
-                        <use href="./images/sprite.svg/icons.svg#icon-burger"></use>
-                    </svg>
-                </button>
-                
-                <!-- mobile modal nav -->
-                
-                <div class="mobile-menu" data-menu>
-                    <div class="container mobile-modal-container">
-                    <nav class="modal-nav current">
+            <!-- start mobile menu -->
+            
+            <button type="button" class="burger-btn is-open" aria-expanded="false" data-menu-open>
+                <svg class="burger-btn-icon">
+                    <use href="./images/sprite.svg/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+            
+            <!-- mobile modal nav -->
+            
+            <div class="mobile-menu mobile-modal-container is-open" data-menu>
+                <!-- <div class="mobile-modal-container"> -->
+                    <nav class="menu-link">
                         <ul class="modal-nav-menu list">
                             <li class="modal-menu-item">
                                 <a class="modal-nav-link link current" href="./index.html">
@@ -83,9 +80,9 @@
                             </li>
                         </ul>
                     </nav>
-
+            
                     <!-- mobile modal contacts -->
-                        <ul class="modal-contacts list">
+                    <ul class="modal-contacts list">
                         <li class="modal-contacts-item">
                             <a class="modal-contacts-link modal-contacts-tel link" href="tel:+380961111111">
                                 +38 096 111 1111
@@ -96,16 +93,9 @@
                                 info@devstudio.com
                             </a>
                         </li>
-                        </ul>
-
-                     <!-- modal-close-btn -->
-                    <button class="modal-close-btn" data-menu-close>
-                        <svg class="close-btn-icon">
-                            <use href="./images/sprite.svg/icons.svg#icon-close"></use>
-                        </svg>
-                    </button>
-
-                    <div class="modal-social-nav">
+                    </ul>
+            
+                    <!-- <div class="modal-social-nav"> -->
                         <ul class="modal-social-item">
                             <li class="modal-social-link">
                                 <a class="social" href="Instagram">Instagram</a>
@@ -120,12 +110,19 @@
                                 <a class="social" href="Linkedln">Linkedln</a>
                             </li>
                         </ul>
-                    </div>
+                    <!-- </div> -->
 
-                </div>
-                </div>
-
-                <!-- end mobile menu -->
+                    <!-- modal-close-btn -->
+                    <button class="modal-close-btn" data-menu-close>
+                        <svg class="close-btn-icon">
+                            <use href="./images/sprite.svg/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+            
+                <!-- </div> -->
+            </div>
+            
+            <!-- end mobile menu -->
 
                 <ul class="header-contacts list">
                     <li class="header-contacts-item">
