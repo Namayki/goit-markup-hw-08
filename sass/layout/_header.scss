@@ -93,59 +93,6 @@
 //   background-color: var(--secondary-accent-color);
 // }
 
-// .header {
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   border-bottom: 1px solid var(--header-border-color);
-//   padding-top: 16px;
-//   padding-bottom: 16px;
-// }
-
-// @media screen and (min-width: 768px) {
-//   .header {
-//     padding-top: 26px;
-//     padding-bottom: 26px;
-//   }
-// }
-
-// @media screen and (min-width: 1200px) {
-//   .header {
-//     padding-top: 24px;
-//     padding-bottom: 25px;
-//   }
-// }
-
-// .header-container {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-// }
-
-// .burger-btn {
-//   background-color: transparent;
-//   cursor: pointer;
-//   padding: 0;
-//   border: none;
-//   line-height: 0;
-//   transition: transform-color var(--transition);
-// }
-
-// .burger-btn:hover, .burger-btn:focus {
-//   fill: var(--accent-color);
-// }
-
-// @media screen and (min-width: 768px) {
-//   .burger-btn {
-//     display: none;
-//   }
-// }
-
-// .burger-btn-icon {
-//   width: 40px;
-//   height: 40px;
-// }
-
 .mobile-menu {
   position: fixed;
   z-index: 100;
@@ -167,19 +114,7 @@
 }
 
 .mobile-modal-container {
-  // justify-content: space-between;
-  // width: 100vw;
-  // height: 100vh;
-  // width: 320px;
-  // height: 796px;
 }
-
-// .mobile-modal-container
-//   .modal-nav
-//   .current
-//   .modal-nav-menu
-//   .modal-menu-item
-//   .modal-nav-link
 .mobile-menu {
 }
 
@@ -201,8 +136,8 @@
   transition: transform-color var(--transition);
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+&:hover,
+&:focus {
   fill: var(--accent-color);
 }
 
@@ -278,6 +213,11 @@
 
 .modal-social-link {
   cursor: pointer;
+}
+
+&:hover,
+&:focus {
+  color: var(--accent-color);
 }
 
 .modal-social-link:not(:last-child) {
