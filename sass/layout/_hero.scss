@@ -1,68 +1,79 @@
-
 .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--background-origin-color);
-    // 1x screens, default value, 480x768 image
-    background-image: linear-gradient(var(--linear-gradient-color),
-    var(--linear-gradient-color)),
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--background-origin-color);
+  // 1x screens, default value, 480x768 image
+  background-image: linear-gradient(
+      var(--linear-gradient-color),
+      var(--linear-gradient-color)
+    ),
     url(../images/hero/hero-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    max-width: 480px;
-    height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 480px;
+  height: auto;
 
-    // 2x screens, retina, 480x768 image
-    @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient(var(--linear-gradient-color),
-        var(--linear-gradient-color)),
-        url(../images/hero/hero-mobile@2x.jpg);
-        }
+  // 2x screens, retina, 480x768 image
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        var(--linear-gradient-color),
+        var(--linear-gradient-color)
+      ),
+      url(../images/hero/hero-mobile@2x.jpg);
+  }
 
-// min-width: 768px
+  // min-width: 768px
 
-    @media screen and (min-width: 768px) {
-        background-image: linear-gradient(var(--linear-gradient-color),
-        var(--linear-gradient-color)),
-        url(../images/hero/hero-tablet.jpg);
-        max-width: 768px;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        var(--linear-gradient-color),
+        var(--linear-gradient-color)
+      ),
+      url(../images/hero/hero-tablet.jpg);
+    max-width: 768px;
 
     // 2x screens, retina, 768x1024 image
     @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient(var(--linear-gradient-color),
-        var(--linear-gradient-color)),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          var(--linear-gradient-color),
+          var(--linear-gradient-color)
+        ),
         url(../images/hero/hero-tablet@2x.jpg);
     }
-    } 
+  }
 
-// min-width: 1200px
+  // min-width: 1200px
 
-    @media screen and (min-width: 1200px) {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        background-image: linear-gradient(var(--linear-gradient-color),
-        var(--linear-gradient-color)),
-        url(../images/hero/hero.jpg);
-        max-width: 1200px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        var(--linear-gradient-color),
+        var(--linear-gradient-color)
+      ),
+      url(../images/hero/hero.jpg);
+    max-width: 1200px;
 
     // 2x screens, retina, 1200x1880 image
     @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient(var(--linear-gradient-color),
-        var(--linear-gradient-color)),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          var(--linear-gradient-color),
+          var(--linear-gradient-color)
+        ),
         url(../images/hero/hero@2x.jpg);
     }
-    }
+  }
 }
 
 .hero-container {
-    display: column;
+  display: column;
 }
