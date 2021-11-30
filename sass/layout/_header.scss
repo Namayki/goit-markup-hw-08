@@ -223,7 +223,7 @@
   letter-spacing: 0.02em;
   color: var(--header-color);
 
-  margin-top: auto;
+  margin-bottom: 32px;
 }
 
 .modal-nav-link {
@@ -234,10 +234,10 @@
   color: var(--accent-color);
 }
 
-// .modal-menu-item:not(:last-child),
-// .modal-contacts-item:not(:last-child) {
-//   margin-bottom: 32px;
-// }
+.modal-menu-item:not(:last-child),
+.modal-contacts-item:not(:last-child) {
+  margin-bottom: 32px;
+}
 
 .modal-contacts .menu-link {
   margin-top: auto;
