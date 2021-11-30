@@ -1,37 +1,33 @@
 //UTILS
-@import './utils/variables';
-@import './utils/visually-hidden';
+@import "./utils/variables";
+@import "./utils/visually-hidden";
 
 //BASE
-@import './base/common';
+@import "./base/common";
 
 //COMPONENTS
-@import './components/container';
-@import './components/section';
-@import './components/logo';
-@import './components/title';
-@import './components/hero-btn';
-@import './components/social';
-@import './components/icon';
-@import './components/portfolio-btn';
-@import './components/footer-btn';
-@import './components/footer-form';
-@import './components/modal.backdrop';
-@import './components/modal';
-@import './components/modal-btn';
-
-
+@import "./components/container";
+@import "./components/section";
+@import "./components/logo";
+@import "./components/title";
+@import "./components/hero-btn";
+@import "./components/social";
+@import "./components/icon";
+@import "./components/portfolio-btn";
+@import "./components/footer-form-btn";
+@import "./components/footer-form";
+@import "./components/modal.backdrop";
+@import "./components/modal";
+@import "./components/modal-btn";
 
 //LAYOUT
-@import './layout/header';
-@import './layout/nav';
-@import './layout/hero';
-@import './layout/feature';
-@import './layout/typography';
-@import './layout/team';
-@import './layout/clients';
-@import './layout/portfolio';
-@import './layout/projects';
-@import './layout/footer';
-
-
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/hero";
+@import "./layout/feature";
+@import "./layout/typography";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/portfolio";
+@import "./layout/projects";
+@import "./layout/footer";
