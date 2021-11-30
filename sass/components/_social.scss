@@ -8,6 +8,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
   }
 }
 
@@ -16,6 +17,10 @@
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
 }
 
 .social-list {
