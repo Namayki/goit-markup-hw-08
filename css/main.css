@@ -171,8 +171,16 @@ a {
   color: var(--accent-color);
 }
 
-.header-logo {
-  margin-right: 93px;
+@media screen and (min-width: 768px) {
+  .header-logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    margin-right: 93px;
+  }
 }
 
 .header-logo-dark {
@@ -511,6 +519,7 @@ a {
 
 .footer-label {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1143,7 +1152,7 @@ a {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(var(--linear-gradient-color), var(--linear-gradient-color)), url(../images/hero/hero-tablet.jpg);
-    max-width: 768px;
+    min-width: 768px;
   }
 }
 
@@ -1158,7 +1167,7 @@ a {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(var(--linear-gradient-color), var(--linear-gradient-color)), url(../images/hero/hero.jpg);
-    max-width: 1200px;
+    min-width: 1200px;
   }
 }
 

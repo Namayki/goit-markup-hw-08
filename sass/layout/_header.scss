@@ -3,6 +3,7 @@
   left: 0;
   width: 100%;
   border-bottom: 1px solid var(--header-border-color);
+  // height: 60px;
   padding-top: 16px;
   padding-bottom: 16px;
 
@@ -65,6 +66,11 @@
   pointer-events: none;
   transition: opacity 250ms linear;
   visibility: 250ms linear;
+}
+
+.mobile-modal-container {
+  // max-width: 480px;
+  // max-height: 796px;
 }
 
 .mobile-menu.is-open {
@@ -186,8 +192,3 @@
 .modal-nav-link:focus .modal-contacts-link .modal-social-link .social {
   color: var(--accent-color);
 }
-
-// .modal-nav-link:hover,
-// .modal-nav-link:focus
-// {
-//    color: var(--accent-color);

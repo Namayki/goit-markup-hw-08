@@ -35,7 +35,7 @@
         var(--linear-gradient-color)
       ),
       url(../images/hero/hero-tablet.jpg);
-    max-width: 768px;
+    min-width: 768px;
 
     // 2x screens, retina, 768x1024 image
     @media screen and (min-device-pixel-ratio: 2),
@@ -59,7 +59,7 @@
         var(--linear-gradient-color)
       ),
       url(../images/hero/hero.jpg);
-    max-width: 1200px;
+    min-width: 1200px;
 
     // 2x screens, retina, 1200x1880 image
     @media screen and (min-device-pixel-ratio: 2),
